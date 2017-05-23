@@ -1,7 +1,5 @@
 import React from 'react';
-import Header from '../header/header';
 import Square from './square';
-// import calculateWinner from '../index';
 
 class Board extends React.Component {
   //When you want to aggregate data from multiple children or to have the child components
@@ -78,7 +76,6 @@ class Board extends React.Component {
 
     return (
       <div>
-        <Header name="Priyesh Tungare" />
         <div className="status">{status}</div>
         <div className="board-row">
           {this.renderSquare(0)}
