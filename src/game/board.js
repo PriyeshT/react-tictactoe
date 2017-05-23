@@ -12,6 +12,8 @@ class Board extends React.Component {
       //In JS Classes, you need to explicitly call super(); when defining
       //the constructor of a subclass.
       super();
+      //React Components can have state by setting 'this.state' in the constructor,
+      //which should be considered private to the component.
       this.state = {
           squares: Array(9).fill(null)
       }

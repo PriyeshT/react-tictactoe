@@ -1,16 +1,13 @@
 import React from 'react';
 
-class Square extends React.Component {
-
-  //React Components can have state by setting 'this.state' in the constructor,
-  //which should be considered private to the component.
-  render() {
+//This is a functional component. Whenever a component only has the render method
+//it is best to convert it to a functional component.
+function Square(props) {
     return (
-      <button className="square" onClick={() => this.props.onClick()}>
-        {this.props.value}
+      <button className="square" onClick={props.onClick}>
+        {props.value}
       </button>
     );
-  }
 }
 
 export default Square;
